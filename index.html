@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'background-color': 'hsl(233, 47%, 7%)',
+            'background-card': 'hsl(244, 38%, 16%)',
+            'accent-color':  'hsl(277, 64%, 61%)',
+            'paragraph-color': 'hsla(0, 0%, 100%, 0.75)',
+            'headings-color': 'hsla(0, 0%, 100%, 0.6)',
+          }
+        }
+      }
+    }
+  </script>
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-background-color flex items-center justify-center h-screen relative" >
+
+  <main class="bg-background-card m-5 rounded-md flex flex-col md:grid md:grid-cols-2  md:m-20 max-w-sm md:max-w-none">
+
+    <div class="relative rounded-t-md md:order-2"> 
+      <div class="mask bg-accent-color w-full h-full absolute rounded-t-md md:rounded-r-md "></div>
+
+      <figure class="opacity-70 brightness-50">
+        <img class="img-mob rounded-t-md object-cover w-full" src="./images/image-header-mobile.jpg" alt="working team">
+      </figure>
+      <figure class="opacity-70 brightness-50 h-full w-full">
+        <img class="img-desk rounded-r-md h-full w-full object-cover" src="./images/image-header-desktop.jpg" alt="working team">
+      </figure>
+    </div>
+
+
+    <section class="text-paragraph-color text-center
+    flex flex-col justify-around p-7 pb-0 md:p-8 md:order-1">
+      <h1 class="text-xl font-bold mb-4 ">Get <span class="text-accent-color">insights</span>  that help your business grow.</h1>
+      <p class="text-xs mb-5"> Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+      <ul class="flex flex-col justify-between md:flex-row">
+        <li class="text-xs tracking-wider mb-5"><span class="text-lg">10k+</span> <br> COMPANIES</li>
+        <li class="text-xs tracking-wider mb-5"><span class="text-lg">314</span><br> TEMPLATES</li>
+        <li class="text-xs tracking-wider mb-5"><span class="text-lg">12m+</span> <br> QUERIES</li>
+      </ul>
+    </section>
+  </main>
+
+  
+
+ 
+
+   
+   
+   
+
+  <footer class="attribution absolute inset-x-0 bottom-4 text-center">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Darowl.dev</a>.
+  </footer>
+</body>
+</html>
